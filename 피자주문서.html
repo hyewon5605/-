@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>피자주문서</title>
+</head>
+<body>
+    <h2>피자주문하기</h2> 
+    <hr/> 
+    <form action="dev.php">
+      <p>고객명: <input type="text"></p>
+      <p>전화번호: <input type="text"></p>
+      <p>E-mail: <input type="text"></p>
+      <p>피자 메뉴 :<select name="피자선택">
+        <option value="갈릭갈릭">갈릭갈릭</option>
+        <option value="페퍼로니">페퍼로니</option>
+        <option value="고구마">고구마</option>
+        <option value="하와이안">하와이안</option>
+        <option value="콤비네이션">콤비네이션</option>
+      </select></p>
+      <fieldset style="width: 300px;">
+        <legend>피자사이즈</legend>
+        <input type="radio" name="psize" value="small">small
+        <input type="radio" name="psize" value="medium">medium
+        <input type="radio" name="psize" value="large">large
+      </fieldset>
+      <fieldset style="width: 300px;">
+        <legend>토핑선택</legend>
+        <input type="checkbox" name="to" value="b">베이컨
+        <input type="checkbox" name="to" value="c">치즈
+        <input type="checkbox" name="to" value="o">양파
+        <input type="checkbox" name="to" value="m">버섯
+      </fieldset>
+      <p>희망배송시간 : <input type="time"></p>
+      <p>배송시 요청사항 : <textarea name="" id="" cols="20" rows="5"></textarea></p>
+      <input type="submit" value="주문하기"> 
+      <input type="reset" value="다시 선택하기"> 
+
+    </form>
+</body>
+</html>
