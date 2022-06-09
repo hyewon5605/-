@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css input태그</title>
+    <style>
+        input[type=text]{
+         color: red;
+        }
+        @keyframes textcolor{
+           0%{color: red;}
+           30%{color: blue;}
+           60%{color: yellow;}
+           100%{color: darkolivegreen;}
+        }
+        @keyframes bomb{
+            0%{font-size: 50%;}
+            100%{font-size: 100%;}
+        }
+            span{
+                animation-name: textcolor;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+            }
+            h3>span{
+                animation-name: bomb;
+                animation-duration: 3s;
+                -o-animation-iteration-count: infinite ;
+            }
+            h3>span{
+                transition: font-size 5s;
+            }
+            h3>span:hover{
+               transition:font-size: 500;
+            }
+    </style>
+</head>
+<body>
+    <h3><span>폼</span> 꾸미기</h3>
+    <hr>
+    <p><label for="mame">이름:</label><input type="text" id="name"
+        placeholder="you"></p>
+        <p><label for="mame">성격:</label><input type="text" id="name"
+            placeholder="you"></p>
+    <p><span>글자에 색상 변화 애니메이션</span></p>
+</body>
+</html>
